@@ -63,6 +63,7 @@ void make_map(char **argv)
 {
 	int i, j;
 	int **file_map;
+	
 	/** get the map value form the file **/
 	file_map = get_altitude(argv);
 	/** update the map value with value parsed from the file **/
