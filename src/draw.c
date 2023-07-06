@@ -34,7 +34,6 @@ void display_player(SDL_Instance instance)
  *
  * Return: nothing
  **/
-
 void draw_map(SDL_Instance ins)
 {
 	/** variable for x & y coordinate of the map **/
@@ -73,7 +72,6 @@ void draw_map(SDL_Instance ins)
  *
  * Return: nothing
  **/
-
 void draw_scene(SDL_Instance ins, int n, float h, float ray_a, float shd,
 		float rx, float ry, int m_txr)
 {
@@ -128,7 +126,6 @@ void draw_scene(SDL_Instance ins, int n, float h, float ray_a, float shd,
  *
  * Return: nothing
  **/
-
 void draw_floor(SDL_Instance ins, float ln_off, int n, float line, float ra)
 {
 	/** variable for the floor **/
@@ -164,7 +161,6 @@ void draw_floor(SDL_Instance ins, float ln_off, int n, float line, float ra)
  *
  * Return: nothing
  **/
-
 void draw_roof(SDL_Instance ins, float ln_off, int n, float line, float ra)
 {
 	/** variables for the ceiling **/
