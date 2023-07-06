@@ -9,7 +9,6 @@ btn_keys btnkeys;
  *
  * Return: 0 on suceesss 1 otherwise
  **/
-
 int poll_events(SDL_Instance ins)
 {
 	SDL_Event ev;
@@ -42,20 +41,17 @@ int poll_events(SDL_Instance ins)
  *
  * Return: nothing
  **/
-
 void handle_key_down(SDL_Instance ins)
 {
 	int mx, my, px = player.x / map_s, py = player.y / map_s, xo = 0, yo = 0;
 
 	xo = (player.dx < 0) ? -20 : 20, yo = (player.dy < 0) ? -20 : 20;
-
 	/** if a key pressed **/
 	if (btnkeys.a == 1)
 	{
 		player.a -= 0.1, player.a = FixAng(player.a);
 		player.dx = cos(player.a) * 5, player.dy = sin(player.a) * 5;
 	}
-
 	/** if d key pressed **/
 	else if (btnkeys.d == 1)
 	{
@@ -82,20 +78,17 @@ void handle_key_down(SDL_Instance ins)
 	}
 	else if (btnkeys.e == 1) /** if e key presse **/
 		handle_door();
-
 	/** set the drawing color & draw the required items **/
 	SDL_SetRenderDrawColor(ins.ren, 76, 76, 76, 0);
 	SDL_RenderClear(ins.ren);
 	display(ins);
 	SDL_RenderPresent(ins.ren);
 }
-
 /**
  * handle_door - function to handle the door open activity
  *
  * Return: nothing
  **/
-
 void handle_door(void)
 {
 	int px_add_off, py_add_off, mx, my, xo, yo;
@@ -105,23 +98,19 @@ void handle_door(void)
 	px_add_off = (player.x + xo) / map_s;
 	py_add_off = (player.y + yo) / map_s;
 	mx = px_add_off, my = py_add_off;
-
 	/**
 	 *printf("mx=%d, my=%d dx=%f dy=%f\n", mx, my, player.dx, player.dy);
 	**/
 	/** if the player is neear to the door **/
-
 	if (getmap_value(mx, my, 0) == 4)
 		setmap_value(mx, my, 0);
 }
-
 /**
  * key_down - function to handle key down event
  * @ev: the given event
  *
  * Return: nothing
  **/
-
 void key_down(SDL_Event ev)
 {
 	/** if left or a key pressed **/
@@ -150,7 +139,6 @@ void key_down(SDL_Event ev)
  *
  * Return: nothing
  **/
-
 void key_up(SDL_Event ev)
 {
 	/** if left or a key pressed **/
@@ -172,3 +160,4 @@ void key_up(SDL_Event ev)
 	if (ev.key.keysym.sym == SDLK_ESCAPE)
 		btnkeys.x = 0;
 }
+
