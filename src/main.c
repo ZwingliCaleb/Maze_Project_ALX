@@ -1,5 +1,6 @@
 #include "../headers/header.h"
 
+
 enemy_t enemy;
 /**
 * main - Execution phase commence
@@ -31,7 +32,6 @@ int main(int argc, char **argv)
 		display(instance);
 		SDL_RenderPresent(instance.ren);
 	}
-
 	/** destroy render and quit **/
 	SDL_DestroyRenderer(instance.ren);
 	SDL_DestroyWindow(instance.win);
