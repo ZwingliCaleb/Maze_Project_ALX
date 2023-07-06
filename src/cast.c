@@ -8,7 +8,6 @@ float buff[num_rays];
  *
  * Return: nothing
  **/
-
 void ray_cast(SDL_Instance ins)
 {
 	/** variables for ray, horizontal & vertical distance **/
@@ -61,7 +60,6 @@ void ray_cast(SDL_Instance ins)
  *
  * Return: nothing
  **/
-
 void horizontal_collision(float ray_a, float *hd, float *hx, float *hy,
 			int *hmtx)
 {
@@ -116,7 +114,6 @@ void horizontal_collision(float ray_a, float *hd, float *hx, float *hy,
  *
  * Return: nothing
  **/
-
 void vertical_collision(float ray_a, float *vd, float *vx, float *vy,
 			int *vmtx)
 {
@@ -167,7 +164,6 @@ void vertical_collision(float ray_a, float *vd, float *vx, float *vy,
  * @ry: the y position of the ray
  * Return: 1 if the ray hists the wall 0 otherwise
  **/
-
 int hit_wall(float rx, float ry)
 {
 	int mx, my, mp;
@@ -194,7 +190,6 @@ int hit_wall(float rx, float ry)
  *
  * Return: the distance
  **/
-
 float find_distance(float ax, float ay, float bx, float by)
 {
 	return (sqrt((bx - ax) * (bx - ax) + (by - ay) * (by - ay)));
