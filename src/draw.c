@@ -180,3 +180,4 @@ void draw_roof(SDL_Instance ins, float ln_off, int n, float line, float ra)
 			SDL_RenderDrawPoint(ins.ren, j + 530, 500 - i);
 	}
 }
+
