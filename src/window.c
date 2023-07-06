@@ -3,6 +3,7 @@
 /**
 * init_instance - initialize a window instance.
 * @in: the instance
+*
 * Return: 1 when there is success or 0 for failure
 **/
 
@@ -14,11 +15,9 @@ int init_instance(SDL_Instance *in)
 		fprintf(stderr, "Unable to initialize SDL: %s\n", SDL_GetError());
 		return (1);
 	}
-
 	/** set the height and width of window**/
 	in->win = SDL_CreateWindow("The Maze Project", 0, 0, SCREEN_WIDTH,
 	SCREEN_HEIGHT, SDL_WINDOW_OPENGL);
-	
 	/**if window is not created**/
 	if (in->win == NULL)
 	{
@@ -26,11 +25,9 @@ int init_instance(SDL_Instance *in)
 		SDL_Quit();
 		return (1);
 	}
-
 	/** create render instance**/
 	in->ren = SDL_CreateRenderer(in->win, -1, SDL_RENDERER_ACCELERATED 
 	| SDL_RENDERER_PRESENTVSYNC);
-
 	/**if renderer is not created **/
 	if (in->ren == NULL)
 	{
@@ -38,7 +35,6 @@ int init_instance(SDL_Instance *in)
 		SDL_Quit();
 		return (1);
 	}
-
 	/** if SDL image fails to be initialized **/
 	if (IMG_Init(IMG_INIT_PNG) !=VIMG_INIT_PNG)
 	{
@@ -53,15 +49,14 @@ int init_instance(SDL_Instance *in)
 * @a: the specified angle
 * Return: the converted angle
 **/
-
 float FixAng(float a)
 {
 	/** if the angle is over 360 degrees ***/
 	if (a > 2 * PI)
 		a -= 2 * PI;
-
 	/** in the case of a negative angle **/
 	if (a < 0)
 		a += 2 * PI;
 	return (a);
 }
+
