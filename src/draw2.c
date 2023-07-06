@@ -166,3 +166,4 @@ void sort_sprite(int *sprite, double *spr_dis, int n)
 		}
 	}
 }
+
