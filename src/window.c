@@ -36,7 +36,7 @@ int init_instance(SDL_Instance *in)
 		return (1);
 	}
 	/** if SDL image fails to be initialized **/
-	if (IMG_Init(IMG_INIT_PNG) !=VIMG_INIT_PNG)
+	if (IMG_Init(IMG_INIT_PNG) != IMG_INIT_PNG)
 	{
 		fprintf(stderr, "Initialize SDL Image failed \n")
 		return (1);
