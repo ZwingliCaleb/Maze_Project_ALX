@@ -6,7 +6,6 @@
  *
  * Return: nothing
  **/
-
 void free_grid(SDL_Point ***grid)
 {
 	/** variables for x & y coordinate **/
@@ -29,7 +28,6 @@ void free_grid(SDL_Point ***grid)
  *
  * Return: Nothing
  **/
-
 void free_tokens(char **tokens)
 {
 	char **tmp = tokens;
@@ -48,7 +46,6 @@ void free_tokens(char **tokens)
  *
  * Return: nothing
  **/
-
 void free_cols(char ***cols)
 {
 	/** temp variable to clear the row & column **/
@@ -70,7 +67,6 @@ void free_cols(char ***cols)
  *
  * Return: Nothing
  **/
-
 void free_numbers(int **numbers)
 {
 	int i;
