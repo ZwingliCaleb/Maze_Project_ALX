@@ -8,12 +8,10 @@ enemy_t enemy;
 *
 * Return: success
 **/
-
 int main(int argc, char **argv)
 {
 	/** Instance variable **/
 	SDL_Instance instance;
-
 	/**create and initializ window**/
 	if (init_instance(&instance) != 0)
 		return (1);
@@ -47,7 +45,6 @@ int main(int argc, char **argv)
  *
  * Return: nothing
  **/
-
 void display(SDL_Instance instance)
 {
 	ray_cast(instance);
@@ -63,7 +60,6 @@ void display(SDL_Instance instance)
  *
  * Return: nothing
  **/
-
 void init_game(void)
 {
 	/** initialize the player x, y, width, heigth and deltas **/
@@ -75,3 +71,4 @@ void init_game(void)
 	player.dx = cos(player.a) * 5;
 	player.dy = sin(player.a) * 5;
 }
+
