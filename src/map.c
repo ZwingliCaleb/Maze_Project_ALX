@@ -31,7 +31,6 @@ int map_floor[map_y][map_x] = {
  *
  * Return: the value at x,y
  **/
-
 int getmap_value(int x, int y, int mp)
 {
 	/** if the map floor is required **/
@@ -49,7 +48,6 @@ int getmap_value(int x, int y, int mp)
  *
  * Return: nothing
  **/
-
 void setmap_value(int x, int y, int val)
 {
 	/** set the map value to argument val **/
@@ -61,12 +59,10 @@ void setmap_value(int x, int y, int val)
  *
  * Return: nothing
  **/
-
 void make_map(char **argv)
 {
 	int i, j;
 	int **file_map;
-
 	/** get the map value form the file **/
 	file_map = get_altitude(argv);
 	/** update the map value with value parsed from the file **/
@@ -78,3 +74,4 @@ void make_map(char **argv)
 	/** free the allocated map **/
 	free_numbers(file_map);
 }
+
