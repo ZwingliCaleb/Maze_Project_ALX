@@ -44,7 +44,6 @@ void ray_cast(SDL_Instance ins)
 		px = player.x * MAP_SCALE, py = player.y * MAP_SCALE;
 		rx = ray_x * MAP_SCALE, ry = ray_y * MAP_SCALE;
 		SDL_RenderDrawLine(ins.ren, px, py, rx, ry);
-
 		/** draw the wall **/
 		draw_scene(ins, i, disT, ray_a, shade, ray_x, ray_y, htx);
 		ray_a += DR, ray_a = FixAng(ray_a);
