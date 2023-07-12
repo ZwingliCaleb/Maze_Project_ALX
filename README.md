@@ -26,7 +26,8 @@ This game involves the shooter being moved. The keys mapped out on the keyboard 
 > move right - d or right directional button
 
 ### Game screen grab
-![VirtualBox_Ubuntu 22 04_12_07_2023_18_12_50](https://github.com/ZwingliCaleb/Maze_Project_ALX/assets/84632961/18842f1b-5959-4b0e-b5a1-ef01b9778c33)
+![VirtualBox_Ubuntu 22 04_13_07_2023_00_26_09](https://github.com/ZwingliCaleb/Maze_Project_ALX/assets/84632961/1ba91208-2e41-4758-9ebd-14efec52557b)
+
 
 ### Authors
 Caleb Zwingli [GitHub](https://github.com/ZwingliCaleb)
