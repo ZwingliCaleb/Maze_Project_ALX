@@ -20,9 +20,9 @@ For anybody else wanting to run this game. The process below would get you start
 
 ### Play the game!
 This game involves the shooter being moved. The keys mapped out on the keyboard to move the players are:- <br>
-> move up/forward - w or up directional button
-> move down/behind - s or down directional button
-> move left - a or left directional button
+> move up/forward - w or up directional button <br>
+> move down/behind - s or down directional button <br>
+> move left - a or left directional button <br>
 > move right - d or right directional button
 
 ### Game screen grab
