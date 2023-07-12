@@ -33,4 +33,4 @@ This game involves the shooter being moved. The keys mapped out on the keyboard 
 Caleb Zwingli [GitHub](https://github.com/ZwingliCaleb)
 
 ## License
-> copyright (c) 2023 Caleb Zwingli
+> copyright ©️ 2023 Caleb Zwingli
