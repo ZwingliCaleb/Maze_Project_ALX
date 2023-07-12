@@ -1,6 +1,6 @@
 #include "../headers/header.h"
 
-player_t player;
+extern player_t player;
 float buff[num_rays];
 /**
  * ray_cast - function that casts an array to the wall

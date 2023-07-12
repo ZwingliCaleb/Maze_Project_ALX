@@ -1,6 +1,6 @@
 #include "../headers/header.h"
 
-player_t player;
+extern player_t player;
 btn_keys btnkeys;
 
 /**

@@ -16,7 +16,7 @@ int init_instance(SDL_Instance *in)
 		return (1);
 	}
 	/** set the height and width of window**/
-	in->win = SDL_CreateWindow("The Maze Project", 0, 0, SCREEN_WIDTH,
+	in->win = SDL_CreateWindow("Zwingli's 3D Maze", 0, 0, SCREEN_WIDTH,
 	SCREEN_HEIGHT, SDL_WINDOW_OPENGL);
 	/**if window is not created**/
 	if (in->win == NULL)

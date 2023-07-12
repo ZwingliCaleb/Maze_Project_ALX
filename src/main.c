@@ -9,6 +9,9 @@ enemy_t enemy;
 *
 * Return: success
 **/
+
+player_t player; //Define player variable
+
 int main(int argc, char **argv)
 {
 	/** Instance variable **/
